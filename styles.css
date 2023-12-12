@@ -1,0 +1,255 @@
+.carousel-control {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+
+#carousel {
+    text-align: center;
+}
+
+.carousel-inner {
+    display: inline-block;
+}
+
+.carousel-inner .item {
+    display: none;
+}
+
+.carousel-inner .active {
+    display: block;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+div.container {
+    text-align: center;
+  }
+  
+  ul.myUL {
+    display: inline-block;
+    text-align: left;
+  }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/code.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set text color to ensure readability on the background */
+}
+
+nav {
+    background-color: rgba(51, 51, 51, 0.7); /* Adding transparency to the navigation background */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Distribute menu items evenly */
+    width: 100%;
+    opacity: 0.8; /* Set default opacity */
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+nav:hover ul {
+    opacity: 1;
+}
+
+nav li {
+    display: inline;
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* Add transition for opacity and background-color */
+}
+
+nav li:hover {
+    opacity: 1;
+    background-color: #333; /* Change background color on hover */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px; /* Adjusted font size for better readability */
+    padding: 8px; /* Add padding for better spacing */
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* Additional Styles for Smaller Screens */
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+}
+
+/* Adjust textarea size */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* 
+.slider{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+} */
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+
+.slider-img{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    left:1000;
+    opacity: 0;
+}
+
+.slider-img.active{
+    opacity: 1;
+}
+
+.controlls{
+    opacity: 1;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.right-arrow{
+    right: 10px;
+}
+
+.left-arrow{
+    left: 10px;
+}
+
+/* last step*/
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* White text color for navigation links */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container__item {
+    max-width: 600px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the container horizontally */
+    background-color: #ffffff; /* White background color for the container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    padding: 20px;
+}
+
+.job__list-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for list titles */
+}
+
+.job__responsibilities {
+    list-style: none;
+    padding: 0;
+}
+
+.job__responsibilities li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #495057; /* Dark gray text color for list items */
+}
+
+/* Add more styling as needed */
